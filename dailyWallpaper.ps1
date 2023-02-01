@@ -1,3 +1,13 @@
+$param=$args[0]
+
+if ($param -eq 'gradient') {
+    $feed = 'https://botsin.space/users/gradientbot.rss'
+} elseif ($param -eq 'stipe') {
+    $feed = 'https://botsin.space/users/stripey.rss'
+} else {
+    Write-Warning 'invalid parameter'
+}
+
 ## Wallpaper Directory
 $folder = "$env:userprofile\OneDrive\Pictures"
 
@@ -5,7 +15,7 @@ $folder = "$env:userprofile\OneDrive\Pictures"
 $image = "daily.png"
 $wallpaper = ($folder + "\" + $image)
 
-[xml]$feed = Invoke-WebRequest -Uri 'https://botsin.space/users/stripey.rss'
+[xml]$feed = Invoke-WebRequest -Uri $feed
 $post = $feed.rss.channel.item[0]
 $url = $post.description.Split() | select-string ".png"
 $url = $url[0]
