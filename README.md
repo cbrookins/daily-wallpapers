@@ -6,6 +6,5 @@ Set wallpaper using @Stripey@botsin.space or @Gradientbot.botsin.space posts
 
 ```dailyWallpaper.ps1 stripe```
 
-
-## Save location
-Default save location is OneDrive Pictures folder.  Update the $folder variable (Line 12) to specify a different location.
+## Also for MacOS/iOS
+https://www.icloud.com/shortcuts/18a9ac6da4b1436ab474b297e49e0567
