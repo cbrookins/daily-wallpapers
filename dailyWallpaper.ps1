@@ -9,7 +9,7 @@ if ($param -eq 'gradient') {
 }
 
 ## Wallpaper Directory
-$folder = "$env:userprofile\OneDrive\Pictures"
+$folder = "$env:userprofile"
 
 ## The Magic
 $image = "daily.png"
