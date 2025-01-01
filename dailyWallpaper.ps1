@@ -1,9 +1,9 @@
 $param=$args[0]
 
 if ($param -eq 'gradient') {
-    $feed = 'https://botsin.space/users/gradientbot.rss'
+    $feed = 'https://shuriken.masto.host/users/gradientbot.rss'
 } elseif ($param -eq 'stripe') {
-    $feed = 'https://botsin.space/users/stripey.rss'
+    $feed = 'https://shuriken.masto.host/users/stripey.rss'
 } else {
     Write-Warning 'invalid parameter'
 }
