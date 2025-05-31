@@ -1,4 +1,5 @@
 # SCHEDULE DAILYWALLPAPER
+$style = 'gradient'
 Set-Location $env:USERPROFILE
 git clone https://codeberg.org/cbrookins/daily-wallpapers.git
 $trigger = New-ScheduledTaskTrigger -Daily -At 9:00am
